@@ -54,6 +54,7 @@ source "amazon-ebs" "fastapi" {
   ssh_username  = "ec2-user"
 
   subnet_id = "subnet-016f8718119898fc2"
+  associate_public_ip_address = true
   
   # AMI configuration
   ami_name        = local.ami_name
